@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="うさぎシーサイドパークは海のそばに建設された遊園地です">
+    <title>うさぎシーサイドパーク - お食事・グッズ</title>
+
+    <link rel="icon" href="../assets/img/favicon.ico"> <!-- ファビコン -->
+    <link rel="stylesheet" href="../assets/css/reset.css"><!-- リセット -->
+    <link rel="stylesheet" href="../assets/css/common.css"><!-- 全ページ共通css -->
+    <link rel="stylesheet" href="../assets/css/food.css"><!-- map専用css -->
+
+    <script src="../assets/js/jquery-3.6.4.min.js"></script> <!-- JQuery本体 -->
+    <script src="../assets/js/jquery.rwdImageMaps.js"></script> <!-- mapレスポンシブ専用 -->
+    <script src="../assets/js/script.js"></script> <!-- 自作JQuery -->
+    <script src="../assets/js/food.js"></script> <!-- 自作JQuery（map専用） -->
+</head>
+<body>
+
+<!-- ここからcommon.css -->
+
+<div class="container">
+
+    <div class="header flex">
+        <header>
+            <h1>
+                <a href="../index.html"><img src="../assets/img/common_logo.png" alt="うさぎシーサイドパーク"></a>
+            </h1>
+        </header>
+
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <ul class="flex headerNav">
+                <li><a href="#"><span class="icon_event">イベント</span></a></li>
+                <li><a href="../map/index.html"><span class="icon_map">園内MAP</span></a></li>
+                <li><a href="#"><span class="icon_attraction">アトラクション・アクティビティ</span></a></li>
+                <li><a href="../food_items/index.html"><span class="icon_food">お食事・グッズ</span></a></li>
+                <li><a href="#"><span class="icon_hotel">ホテル</span></a></li>
+                <li><a href="#"><span class="icon_price">料金・アクセス・スケジュール</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ここまで/common.css -->
+
+
+<!-- ここからfood.css -->
+<main>
+    <div class="inner">
+
+    <h1 class="visual">
+    <img src="../assets/img/food_items_mainvisual .jpg" alt="お食事&グッズ">
+    </h1>
+
+    <ul class="tabMenu"><!-- タブ切り替えメニュー -->
+        <li class="tab1 active"><a href="#tab1" class="current">お食事</a></li>
+        <li class="tab2"><a href="#tab2">グッズ</a></li>
+    </ul>
+    <div id="contents">
+<!-- ここからお食事ページ -->
+        <div id="tab1">
+            <h2>メニュー</h2>
+
+            <div class="center">
+                <figure>
+                    <img src="../assets/img/food_menu_humburg.png" alt="あつあつ鉄板ハンバーグ">
+                    <figcaption>
+                        <h4>あつあつ鉄板ハンバーグ</h4>
+                        <p>ドリンクセット　1,300円</p>
+                        <p>単品　1,100円</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/img/food_menu_curry.png" alt="ロースカツカレー">
+                    <figcaption>
+                        <h4>ロースカツカレー</h4>
+                        <p>ドリンクセット　1,550円</p>
+                        <p>単品　1,350円</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/img/food_menu_pizza.png" alt="窯焼きマルゲリータ">
+                    <figcaption>
+                        <h4>窯焼きマルゲリータ</h4>
+                        <p>ドリンクセット1,800円</p>
+                        <p>単品　1,600円</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/img/food_menu_spa.png" alt="ミートソーススパゲッティ">
+                    <figcaption>
+                        <h4>ミートソーススパゲッティ</h4>
+                        <p>ドリンクセット　1,200円</p>
+                        <p>単品　1,000円</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="kids">
+                <h2>お子様メニュー</h2>
+                <p>※12才以下のお子様限定です。</p>
+                <p>※すべてのメニューにドリンク（リンゴジュース）が付きます。</p>
+            </div>
+
+            <div class="center">
+                <figure>
+                    <img src="../assets/img/food_kidsmenu_curry.png" alt="キッズカレー">
+
+                    <figcaption>
+                        <h4>キッズカレー</h4>
+                        <p>900円</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/img/food_kidsmenu_humburg.png" alt="キッズハンバーグ">
+                    <figcaption>
+                        <h4>キッズハンバーグ</h4>
+                        <p>900円</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/img/food_kidsmenu_ramen.png" alt="キッズラーメン">
+                    <figcaption>
+                        <h4>キッズラーメン</h4>
+                        <p>900円</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <h3>サイドメニュー</h3>
+
+            <div class="center">
+                <figure>
+                    <img src="../assets/img/food_kidsmenu_churos.png" alt="チュロス">
+                    <figcaption>
+                    <h4>チュロス</h4>
+                    <p>400円</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/img/food_kidsmenu_potechiki.png" alt="ポテトチキンセット">
+                    <figcaption>
+                        <h4>ポテトチキンセット</h4>
+                        <p>800円</p>
+                    </figcaption>
+                </figure>
+            </div><!-- class="center"  -->
+        </div><!-- id="tab1" -->
+
+<!-- ここからグッズページ -->
+        <div id="tab2" class="around items">
+            <figure>
+                <img src="../assets/img/items_tannbura.jpg" alt="ウサギシーサイドパークオリジナルタンブラー">
+            <figcaption>
+            <div class="center">
+                <a href="../food_items/index.html"><img src="../assets/img/items_andmore.png" alt="もっと見る"></a>
+
+                <h5>オリジナルタンブラー（ドリンク付き）</h5>
+            </div>
+                <p>うさぎシーサイドパークオリジナルタンブラーです。</p>
+                <p>1,500円</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/img/items_hat.jpg" alt="ウサギオリジナルキャップ">
+            <figcaption>
+                <div class="center">
+                    <a href="../food_items/index.html"><img src="../assets/img/items_andmore.png" alt="もっと見る"></a>
+
+                <h5>うさぎオリジナルキャップ</h5>
+                </div>
+                <p>2,200円</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/img/items_pillow.jpg" alt="シャチ抱き枕">
+            <figcaption>
+                <div class="center">
+                <a href="../food_items/index.html"><img src="../assets/img/items_andmore.png" alt="もっと見る"></a>
+
+                <h5>シャチ抱き枕</h5>
+                </div>
+                <p>3,500円</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/img/items_towel.jpg" alt="フード付きタオル">
+            <figcaption>
+                <div class="center">
+                    <a href="../food_items/index.html"><img src="../assets/img/items_andmore.png" alt="もっと見る"></a>
+
+                <h5>フード付きタオル</h5>
+                </div>
+                <p>2,000円</p>
+                </figcaption>
+            </figure>
+        </div><!-- id="tab2" class="around items"-->
+    </div> <!---- id="contents"-->
+</main>
+
+    <!-- ここからcommon.css -->
+    <!-- SNS -->
+    <div class="pbNested border-wave border-wave:after"></div><!-- 波ライン追記 -->
+    <div class="snsbox">
+        <p><img src="../assets/img/common_sns_logo.png"></p>
+        <ul class="sns">
+            <li><a href="#"><img src="../assets/img/common_sns_twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="../assets/img/common_sns_instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="../assets/img/common_sns_youtube.png" alt="Youtube"></a></li>
+        </ul>
+    </div>
+
+    <!-- banner -->
+    <ul class="banner">
+        <li><a href="#"><img src="../assets/img/common_bnr_izumoshi.png" alt="縁結びのまち出雲市" width="200"></a></li>
+        <li><a href="#"><img src="../assets/img/common_bnr_kankou.png" alt="出雲観光ガイド" width="200"></a></li>
+        <li><a href="#"><img src="../assets/img/common_bnr_shimanekankou.png" alt="島根観光ナビ" width="200"></a></li>
+        <li><a href="#"><img src="../assets/img/common_bnr_moshio.jpg" alt="鵜鷺の藻塩" width="200"></a></li>
+    </ul>
+
+</div><!-- /container -->
+
+<footer>
+    <p class="toTop"><img src="../assets/img/common_btn_gototop.png" alt="トップへ戻る"></p>
+    <div class="footerWrap">
+        <ul class="footerNav">
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="#">イベント</a></li>
+            <li><a href="../map/index.html">園内MAP</a></li>
+            <li><a href="#">アトラクション／アクティビティ</a></li>
+            <li><a href="../food_items/index.html">お食事／グッズ</a></li>
+            <li><a href="#">ホテル</a></li>
+            <li><a href="#">料金／アクセス／スケジュール</a></li>
+        </ul>
+        <ul class="footerNav_2">
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+
+        <address>
+            <p>うさぎシーサイドパーク</p>
+            <p>〒699-0761<br>
+                島根県出雲市大社町鷺浦80</p>
+        </address>
+
+        <small>Copyright &copy; 2023 うさぎシーサイドパーク All Rights Reserved.</small>
+
+    </div>
+    </footer>
+<!-- ここまで/common.css -->
+
+</body>
+</html>

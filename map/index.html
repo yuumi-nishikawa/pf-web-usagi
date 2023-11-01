@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="うさぎシーサイドパークは海のそばに建設された遊園地です">
+    <title>うさぎシーサイドパーク - 園内マップ</title>
+
+    <link rel="icon" href="../assets/img/favicon.ico"> <!-- ファビコン -->
+    <link rel="stylesheet" href="../assets/css/reset.css"><!-- リセット -->
+    <link rel="stylesheet" href="../assets/css/common.css"><!-- 全ページ共通css -->
+    <link rel="stylesheet" href="../assets/css/map.css"><!-- map専用css -->
+
+    <script src="../assets/js/jquery-3.6.4.min.js"></script> <!-- JQuery本体 -->
+    <script src="../assets/js/jquery.rwdImageMaps.js"></script> <!-- mapレスポンシブ専用 -->
+    <script src="../assets/js/script.js"></script> <!-- 自作JQuery -->
+    <script src="../assets/js/map.js"></script> <!-- 自作JQuery（map専用） -->
+</head>
+<body>
+<!-- ここからcommon.css -->
+
+<div class="container">
+
+    <div class="header flex">
+        <header>
+            <h1>
+                <a href="../index.html"><img src="../assets/img/common_logo.png" alt="うさぎシーサイドパーク"></a>
+            </h1>
+        </header>
+
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <ul class="flex headerNav">
+                <li><a href="#"><span class="icon_event">イベント</span></a></li>
+                <li><a href="../map/index.html"><span class="icon_map">園内MAP</span></a></li>
+                <li><a href="#"><span class="icon_attraction">アトラクション・アクティビティ</span></a></li>
+                <li><a href="../food_items/index.html"><span class="icon_food">お食事・グッズ</span></a></li>
+                <li><a href="#"><span class="icon_hotel">ホテル</span></a></li>
+                <li><a href="#"><span class="icon_price">料金・アクセス・スケジュール</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ここまで/common.css -->
+
+
+    <!-- ここからmap.css（下層ページはここから消して使いまわし） -->
+
+    <div class="map">
+        <img src="../assets/img/map.png" alt="園内マップ" usemap="#image-map">
+    </div>
+
+    <map name="image-map">
+        <area target="" alt="attraction" title="アトラクションエリア" href="#attraction" coords="213,322,487,369" shape="rect">
+        <area target="" alt="marine" title="マリンアクティビティエリア" href="#marine" coords="203,558,530,610" shape="rect">
+        <area target="" alt="event" title="イベントエリア" href="#event" coords="616,620,818,670" shape="rect">
+        <area target="" alt="hotel" title="ホテルエリア" href="#hotel" coords="645,288,831,337" shape="rect">
+    </map>
+
+    <div>
+        <a href="#">
+            <img src="../assets/img/map_icon.png" alt="PDFダウンロードはこちら">
+        </a>
+    </div>
+
+    <div id="attraction" class="box container">
+        <div class="mapPhoto">
+            <img src="../assets/img/map_area_1.jpg" alt="アトラクションエリア">
+        </div>
+        <div class="mapText">
+            <h2>&#9312;アトラクションエリア</h2>
+            <p>
+                海のそばに建設された遊園地です。<br>
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+            <p class="mapBtn">
+                <a href="#"><img src="../assets/img/map_icon_2.png" alt="もっと見る"></a>
+            </p>
+        </div>
+    </div>
+
+    <div id="marine" class="box container">
+        <div class="mapPhoto">
+            <img src="../assets/img/map_area_2.jpg" alt="マリンアクティビティエリア">
+        </div>
+        <div class="mapText">
+            <h2>&#9313;マリンアクティビティエリア</h2>
+            <p>
+                マリンスポーツ・海遊びを楽しむことができるエリアです。<br>
+                ダイビング・シュノーケリング・パラセーリング等、人気のレジャーを用意しております。<br>
+                フィッシング用に釣り道具やボートのレンタルも行っております。
+            </p>
+            <p class="mapBtn">
+                <a href="#"><img src="../assets/img/map_icon_2.png" alt="もっと見る"></a>
+            </p>
+        </div>
+    </div>
+
+    <div id="event" class="box container">
+        <div class="mapPhoto">
+            <img src="../assets/img/map_area_3.jpg" alt="イベントエリア">
+        </div>
+        <div class="mapText">
+            <h2>&#9314;イベントエリア</h2>
+            <p>
+                毎月期間限定の季節のイベントを開催しております。<br>
+                詳しい内容はイベントページを参照ください。
+            </p>
+            <p class="mapBtn">
+                <a href="#"><img src="../assets/img/map_icon_2.png" alt="もっと見る"></a>
+            </p>
+        </div>
+    </div>
+
+    <div id="hotel" class="box container border">
+        <div class="mapPhoto">
+            <img src="../assets/img/map_area_4.jpg" alt="ホテルエリア">
+        </div>
+        <div class="mapText">
+            <h2>&#9315;ホテルエリア</h2>
+            <p>
+                全室オーシャンビュー、絶景が自慢のホテルです。<br>
+                レストランやカフェを併設しておりますので休憩にご利用ください。
+            </p>
+            <p class="mapBtn">
+                <a href="#"><img src="../assets/img/map_icon_2.png" alt="もっと見る"></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="border"></div>
+
+    <!-- ここまでmap.css（下層ページはここまで！） -->
+
+
+    <!-- ここからcommon.css -->
+
+    <!-- SNS -->
+    <div class="pbNested border-wave border-wave:after"><!-- 波ライン追記 -->
+        <ul class="sns">
+            <li><a href="#"><img src="../assets/img/common_sns_twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="../assets/img/common_sns_instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="../assets/img/common_sns_youtube.png" alt="Youtube"></a></li>
+        </ul>
+    </div>
+
+    <!-- banner -->
+    <ul class="banner">
+        <li><a href="#"><img src="../assets/img/common_bnr_izumoshi.png" alt="縁結びのまち出雲市" width="200"></a></li>
+        <li><a href="#"><img src="../assets/img/common_bnr_kankou.png" alt="出雲観光ガイド" width="200"></a></li>
+        <li><a href="#"><img src="../assets/img/common_bnr_shimanekankou.png" alt="島根観光ナビ" width="200"></a></li>
+        <li><a href="#"><img src="../assets/img/common_bnr_moshio.jpg" alt="鵜鷺の藻塩" width="200"></a></li>
+    </ul>
+
+    <p class="toTop"><img src="../assets/img/common_btn_gototop.png" alt="トップへ戻る"></p>
+
+</div><!-- /container -->
+
+<footer>
+    <div class="footerWrap">
+        <ul class="footerNav">
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="#">イベント</a></li>
+            <li><a href="../map/index.html">園内MAP</a></li>
+            <li><a href="#">アトラクション／アクティビティ</a></li>
+            <li><a href="../food_items/index.html">お食事／グッズ</a></li>
+            <li><a href="#">ホテル</a></li>
+            <li><a href="#">料金／アクセス／スケジュール</a></li>
+        </ul>
+        <ul class="footerNav_2">
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+
+        <address>
+            <p>うさぎシーサイドパーク</p>
+            <p>〒699-0761<br>
+                島根県出雲市大社町鷺浦80</p>
+        </address>
+
+        <small>Copyright &copy; 2023 うさぎシーサイドパーク All Rights Reserved.</small>
+
+    </div>
+    </footer>
+<!-- ここまで/common.css -->
+
+</body>
+</html>

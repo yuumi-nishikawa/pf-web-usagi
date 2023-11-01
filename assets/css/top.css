@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+.slider{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.slider img{
+    width: 100%;
+    padding:20px;
+}
+
+.mainNav a {
+    display: block;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.mainNav li a span{
+    display: block;
+    padding: 30px 20px;
+}
+
+.mainNav .flex{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mainNav{
+    max-width: 960px;
+    margin: 50px auto 30px;
+}
+
+.mainNav ul li{
+    width: 30%;
+    height: 50%;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.mainNav li a > span:before{
+    display: block;
+    text-align: center;
+}
+
+.main_icon_event::before{
+    content:url(../img/top_mainicon_event.png);
+}
+.main_icon_event:hover::before{
+    content:url(../img/top_mainicon_event_hover.png);
+}
+
+.main_icon_map::before{
+    content:url(../img/top_mainicon_map.png);
+}
+.main_icon_map:hover::before{
+    content:url(../img/top_mainicon_map_hover.png);
+}
+
+.main_icon_attraction::before{
+    content:url(../img/top_mainicon_attraction.png);
+}
+.main_icon_attraction:hover::before{
+    content:url(../img/top_mainicon_attraction_hover.png);
+}
+
+.main_icon_food::before{
+    content:url(../img/top_mainicon_food.png);
+}
+.main_icon_food:hover::before{
+    content:url(../img/top_mainicon_food_hover.png);
+}
+
+.main_icon_hotel::before{
+    content:url(../img/top_mainicon_hotel.png);
+}
+.main_icon_hotel:hover::before{
+    content:url(../img/top_mainicon_hotel_hover.png);
+}
+
+.main_icon_price::before{
+    content:url(../img/top_mainicon_price.png);
+}
+.main_icon_price:hover::before{
+    content:url(../img/top_mainicon_price_hover.png);
+}
+
+.mainbtn_event a{
+    border:solid 3px #fe9903;
+    border-radius: 20px;
+    color: #fe9903;
+}
+
+.mainbtn_map a{
+    border:solid 3px #0267fe;
+    border-radius: 20px;
+    color: #0267fe;;
+}
+.mainbtn_atrc a{
+    border:solid 3px #fe3434;
+    border-radius: 20px;
+    color: #fe3434;
+}
+.mainbtn_food a{
+    border:solid 3px #fbcc23;
+    border-radius: 20px;
+    color: #fbcc23
+}
+.mainbtn_hotel a{
+    border:solid 3px #595ba8;
+    border-radius: 20px;
+    color: #595ba8;
+}
+.mainbtn_price a{
+    border:solid 3px #66e3fe;
+    border-radius: 20px;
+    color: #66e3fe;
+}
+
+.mainbtn_event a:hover{
+    border-radius: 20px;
+    background-color: #fe9903;
+    color: #fff;
+    transition: 0.3s;
+}
+.mainbtn_map a:hover{
+    border-radius: 20px;
+    background-color: #0267fe;;
+    color: #fff;
+    transition: 0.3s;
+}
+.mainbtn_atrc a:hover{
+    border-radius: 20px;
+    background-color: #fe3434;
+    color: #fff;
+    transition: 0.3s;
+}
+.mainbtn_food a:hover{
+    border-radius: 20px;
+    background-color: #fbcc23;
+    color: #fff;
+    transition: 0.3s;
+}
+.mainbtn_hotel a:hover{
+    border-radius: 20px;
+    background-color: #595ba8;
+    color: #fff;
+    transition: 0.3s;
+}
+.mainbtn_price a:hover{
+    border-radius: 20px;
+    background-color: #66e3fe;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+section{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.info li{
+    border: solid 1px #ff9900;
+    border-radius: 15px;
+    box-shadow: 4px 4px #ff9900;
+    max-width: 960px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.info li a{
+    color: #ff9900;
+    margin: 3px 20px;
+    display: block;
+    position: relative;
+}
+
+.info li a::after{
+    content: url(../img/top_icon_andmore_yellow.png) ;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -13px;
+}
+
+.date{
+    margin-right: 20px;
+}
+
+.info ul{
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 24px;
+    color:#0066ff;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h2::before{
+    content: url(../img/common_bubble_left.png);
+    position: relative;
+    top:12px;
+    margin-right: 10px;
+}
+
+h2::after{
+    content: url(../img/common_bubble_right.png);
+    position: relative;
+    top:12px;
+    margin-left: 10px;
+}
+
+.top_pbNested {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+}
+
+.top_border-wave {
+    border-top: 3px solid #0066ff;
+    margin-top: 80px;
+    padding: 30px;
+    position: relative;
+}
+
+.top_border-wave:after {
+    content: '';
+    display: block;
+    width: 123px;
+    height: 45px;
+    background: url(../img/common_line_wave.svg) no-repeat 0 0;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}
+
+
+@media screen and (max-width:975px) {
+
+    .mainbtn_atrc a span,
+    .mainbtn_price a span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:890px) {
+
+    .date,
+    .info_text{
+        display: block;
+    }
+}
+
+@media screen and (max-width:680px) {
+
+    .info li a::after{
+        display: none;
+    }
+
+    .mainbtn_food a span{
+        font-size: 14px;
+    }
+
+    .mainbtn_atrc a span,
+    .mainbtn_price a span{
+        font-size: 12px;
+    }
+}
+
